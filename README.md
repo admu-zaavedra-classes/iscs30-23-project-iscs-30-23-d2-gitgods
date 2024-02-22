@@ -20,16 +20,10 @@ These instructions will get you a copy of the project up and running on your loc
 1. Navigate to the application directory.
 2. Enter _python manage.py runserver_ on the terminal.
 3. Click the output link.
-   
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 
 
-## Authors
+## Author
 Aliya Galang | iscs-30-23-d2-gitgods
 
 ## License
