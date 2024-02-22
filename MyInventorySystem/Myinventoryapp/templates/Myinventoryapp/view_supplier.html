@@ -1,0 +1,40 @@
+{% extends 'Myinventoryapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-2">
+        <div class="col">
+            <a href="{% url 'manage_account' id=x.pk %}" class="btn btn-link text-start">Manage Account</a>
+            <a href="{% url 'login' %}" class="btn btn-link">Logout</a>
+        </div>
+        <div class="col text-end">
+            <a href="{% url 'add_bottle' id=x.pk %}" class="btn btn-secondary active">+ Add Water Bottle</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped mb-5">
+                <thead >
+                    <tr>
+                        <th class="table-dark" scope="col"> Supplier Name </th>
+                        <th class="table-dark" scope="col"> City </th>
+                        <th class="table-dark" scope="col"> Country </th>
+                        <th class="table-dark" scope="col"> Date & Time Created </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for s in supplier %}
+                    <tr>
+                        <td><a href="{% url 'view_bottles' id=x.pk %}" class="text-decoration-none">{{ s.name }}</a></td>
+                        <td> {{ s.city }} </td>
+                        <td> {{ s.country }} </td>
+                        <td> {{ s.created_at }} </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

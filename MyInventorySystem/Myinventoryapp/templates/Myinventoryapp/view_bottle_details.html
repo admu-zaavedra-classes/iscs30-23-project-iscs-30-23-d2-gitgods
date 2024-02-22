@@ -1,0 +1,28 @@
+{% extends 'Myinventoryapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid col-10">
+    <div class="card">
+        <div class="card-header">
+            <h4>Water Bottle Details:</h4>
+        </div>
+        <div class="card-body">
+            <h3>{{ b.SKU }}</h3>
+            <p class="my-0">Brand: {{ b.brand }}</p>
+            <p class="my-0">Cost: {{ b.cost }}</p>
+            <p class="my-0">Size: {{ b.size }}</p>
+            <p class="my-0">Mouth Size: {{ b.mouth_size }}</p>
+            <p class="my-0">Color: {{ b.color }}</p>
+            <p class="my-0">Supplied by: {{ b.supplied_by }}</p>
+            <p class="mt-0">Current Quantity: {{ b.current_quantity }}</p>
+            <div class="row">
+                <div class="col text-end">
+                    <a href="{% url 'delete_bottle' id=x.pk pk=b.pk %}" class="btn btn-danger active">Delete</a>
+                    <a href="{% url 'view_bottles' id=x.pk %}" class="btn btn-secondary active">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
