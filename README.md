@@ -1,6 +1,6 @@
-# Project Title
+# My Inventory System
 
-One Paragraph of project description goes here. Forked from [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+This application stores information on water bottles sold by different suppliers. The user can add or delete a water bottle in the system and they can view the list of suppliers and the water bottles produced by each supplier. 
 
 ## Getting Started
 
@@ -8,55 +8,29 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+1. Install the latest version of Python.
+2. Activate your virtual environment.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+1. Install Django.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
+1. Navigate to the application directory.
+2. Enter _python manage.py runserver_ on the terminal.
+3. Click the output link.
+   
 ## Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Aliya Galang | iscs-30-23-d2-gitgods
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
