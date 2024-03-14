@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-uxb4=-u@g$a%me=%^z7+l=fi!@lr-bvv46_8-p!6q=%fu^w2v9
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
+PORT = 8080
 
 
 # Application definition
