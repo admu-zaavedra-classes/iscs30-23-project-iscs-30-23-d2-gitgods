@@ -1,14 +1,12 @@
-FROM python:3.10
+FROM python:3.8-buster
 
-ENV PYTHONUNBUFFERED=1
-
+ENV PYTHONBUFFERED=1
+ENV HOST 0.0.0.0
 
 WORKDIR /app
-COPY requirements.txt .
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
-
-CMD ["python","manage.py","runserver"]
+CMD python manage.py runserver 0.0.0.0:8000
